@@ -36,6 +36,7 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
@@ -110,6 +111,17 @@
             this.txtKetQua.TabIndex = 2;
             this.txtKetQua.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // btTru
+            // 
+            this.btTru.CausesValidation = false;
+            this.btTru.Location = new System.Drawing.Point(639, 344);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(104, 66);
+            this.btTru.TabIndex = 0;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -122,12 +134,14 @@
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ForeColor = System.Drawing.Color.Purple;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form1";
             this.Text = "Tính toán";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +157,7 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKetQua;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
