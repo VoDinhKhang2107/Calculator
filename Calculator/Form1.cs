@@ -25,19 +25,15 @@ namespace Calculator
         private void btCong_Click(object sender, EventArgs e)
         {
             int a, b, KetQua;
-<<<<<<< HEAD
-            if (txtA.Text != String.Empty)
-=======
-            if (txtA.Text != String.Empty && txtB.Text != String.Empty)
->>>>>>> feature-cal
+
+            if (txtA.Text != String.Empty || txtB.Text != String.Empty)
             {
                 a = int.Parse(txtA.Text);
                 b = int.Parse(txtB.Text);
                 KetQua = a + b;
                 txtKetQua.Text = KetQua.ToString(); 
             }
-<<<<<<< HEAD
-=======
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -52,7 +48,6 @@ namespace Calculator
             b = int.Parse(txtB.Text);
             KetQua = a - b;
             txtKetQua.Text = KetQua.ToString();
->>>>>>> feature-cal
         }
     }
 }
