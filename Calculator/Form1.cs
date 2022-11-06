@@ -25,10 +25,13 @@ namespace Calculator
         private void btCong_Click(object sender, EventArgs e)
         {
             int a, b, KetQua;
-            a = int.Parse(txtA.Text);
-            b = int.Parse(txtB.Text);
-            KetQua = a + b;
-            txtKetQua.Text = KetQua.ToString();
+            if (txtA.Text != String.Empty)
+            {
+                a = int.Parse(txtA.Text);
+                b = int.Parse(txtB.Text);
+                KetQua = a + b;
+                txtKetQua.Text = KetQua.ToString(); 
+            }
         }
     }
 }
